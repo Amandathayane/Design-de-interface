@@ -1,0 +1,41 @@
+<!--A partir do preço à vista de um determinado produto, calcule o preço total a pagar e o valor da prestação mensal, 
+    referentes ao pagamento parcelado. Se o pagamento for parcelado em 3 vezes deve ser dado um acréscimo de 10% no total a ser pago. 
+    Se o parcelamento for em 5 vezes, o acréscimo será de 20%.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">    <!--Style-->
+    <title>CALCULADORA</title>
+</head>
+<body>
+    
+    <h1>CALCULAR PARCELAS</h1>
+
+    <div id="numeros">
+        <div id="numero1Div"><p>Digite o valor</p><input type="text" name="letraA" id="letraA"></div>
+  
+        <div><select name="sinal" id="sinal">
+            <option value="">Selecione</option>
+            <option value="0">A vista</option>
+            <option value="3">Parcelado 3x</option>
+            <option value="5">Parcelado 5x</option>
+        </select></div>
+    </div>
+    <br/>
+
+    <center><button onclick="calcular()">Calcular</button></center>
+    <br>
+
+    <h2>RESULTADO</h2>
+    <div id="calculos">
+        <div id="totalDiv"><p>Valor total</p><span id="total"></span></div>  <!--soma-->    
+    </div>
+    
+    <script src="script.js"></script>    <!--Script-->
+ 
+
+</body>
+</html>

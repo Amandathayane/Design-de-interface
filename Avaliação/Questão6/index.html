@@ -1,0 +1,42 @@
+<!--Escreva um algoritmo que receba dois números reais e um código de seleção do usuário. Se o código digitado for 1, 
+    faça o algoritmo adicionar os dois números previamente digitados e mostrar o resultado; se o código de seleção for 2, 
+    os números deverão ser multiplicados; se o código de seleção for 3, o primeiro número deve ser dividido pelo segundo.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">    <!--Style-->
+    <title>CALCULADORA</title>
+</head>
+<body>
+    
+    <h1>Operações</h1>
+
+    <div id="numeros">
+        <div id="numero1Div"><p>Digite o primeiro número </p><input type="text" name="letraA" id="letraA"></div>
+        <div id="numero2Div"><p>Digite o Segundo número </p><input type="text" name="letraB" id="letraB"></div>
+  
+        <div id="op"><p>Operações </p>
+        <select name="sinal" id="sinal">
+            <option value="">Selecione</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select></div>
+    </div>
+    <br/>
+    <center><button onclick="calcular()">Calcular</button></center>
+    <br>
+
+    <h2>CÁLCULOS</h2>
+    <div id="calculos">
+        <div id="totalDiv"><p>Total</p><span id="C"></span></div>  <!--soma-->    
+    </div>
+    
+    <script src="script.js"></script>    <!--Script-->
+ 
+
+</body>
+</html>
